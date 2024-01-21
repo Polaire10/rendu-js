@@ -1,0 +1,407 @@
+:root {
+  --background-color: #ededed;
+  --page-background: #fff;
+  --text-color: #212121;
+  --color-alpha: #c3423f;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 100px auto;
+}
+
+body.main-content.dark {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.content-container {
+  background-color: var(--page-background);
+}
+
+.swiper-slide {
+  height: 60vh;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-content .tabs {
+  background-color: var(--page-background);
+  color: #000;
+}
+
+body.dark .slider-content .tabs {
+  background-color: #000;
+  color: #fff;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text--alpha {
+  color: var(--color-alpha);
+}
+
+.dark-mode-toggle {
+  --background-color: #111;
+  --page-background: #212121;
+  --text-color: #ededed;
+  --color-alpha: #50a8d8;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+body.dark .swiper-slide {
+  background: #000;
+  color: #fff;
+}
+
+.slider-content {
+  background-color: var(--page-background);
+  color: var(--text-color);
+}
+
+body.dark .slider-content {
+  background-color: #000;
+  color: #fff;
+}
+
+.slider-content .tabs {
+  background-color: var(--page-background);
+}
+
+body.dark .slider-content .tabs {
+  background-color: #000;
+}
+
+body.main-content.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+  .content-container {
+    background-color: var(--page-background);
+  }
+
+  .text--alpha {
+    color: var(--color-alpha);
+  }
+}
+
+* {
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding: 10px 32px;
+  cursor: pointer;
+}
+
+form {
+  border: 1px solid rgba(255, 253, 253, 0.951);
+}
+
+form > div {
+  margin: 30px 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  height: 20px;
+  width: 40%;
+}
+
+.message-error {
+  border: 1px solid rgba(212, 42, 0, 1);
+  color: rgb(212, 42, 0);
+  background-color: rgba(212, 42, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.message-success {
+  border: 1px solid rgb(81, 150, 2);
+  color: rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.success {
+  border: 1px solid rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
+}
+
+.message-error.visible {
+  display: block;
+}
+
+.swiper-slide {
+  height: 60vh;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 24px;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+}
+
+.swiper-slide {
+  height: 110vh;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 100px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 72px;
+  color: white;
+  text-transform: lowercase;
+}
+
+body .swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+}
+
+body .swiper-pagination-bullet-active {
+  background: orangered;
+}
+
+.slide-dw {
+  background-image: url('mac.webp');
+  background-size: cover;
+}
+
+body .swiper-button-next,
+body .swiper-button-prev {
+  color: orangered;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.mon-slider {
+  width: 100%;
+  height: 70vh;
+}
+
+.mon-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  list-style-type: none;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  margin-right: 5px;
+}
+
+.tab-active {
+  background-color: #ccc;
+}
+
+.contents {
+  margin-top: 10px;
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+
+#inscriptionForm {
+  border: 1px solid rgba(153, 153, 153, 0.6);
+  padding: 20px;
+  margin: 30px 0;
+}
+
+#inscriptionForm div {
+  margin: 20px 0;
+}
+
+select {
+  height: 30px;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-left: 0;
+}
+
+.dark-mode-toggle {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+body.dark form {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark label {
+  color: #fff; /* Assurez-vous que les labels sont visibles en mode sombre */
+}
+
+body.dark input {
+  background-color: #555; /* Couleur de fond pour les champs de saisie en mode sombre */
+  color: #fff;
+}
+
+body.dark button {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent; /* Modifier cette ligne selon vos besoins */
+  color: #fff; /* Couleur du texte dans la barre supérieure */
+}
+.logo img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* Ajustez cette valeur selon vos besoins */
+  max-height: 100px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.buttons {
+  display: flex;
+  gap: 10px; /* Espacement entre les boutons */
+  justify-content: flex-end; /* Aligner les boutons à droite */
+}
+
+.button {
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  /* Ajoutez d'autres styles selon vos préférences */
+}
+.background-section {
+  background-image: url('C:\Users\cabos\Downloads\decollage.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.background-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-45%, -20%);
+  text-align: center;
+}
+
+.text-overlay p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  max-width: 25%; 
+  margin: 0 auto; 
+}
